@@ -1,0 +1,101 @@
+<Question A>
+To complie lab3_qA.cpp,you could just use:
+
+g++ -o lab3_qA lab3_qA.cpp
+
+because no nonstandard header file is included.
+Another way to compile it is to use:
+
+make lab3_qA
+
+<Question B>
+To compile lab3_qB.cpp, use:
+
+make lab3_qB
+
+File relationships are written in Makefile.
+
+The result obtained by executing lab3_qB:
+/////***I executed lab3_qB ON MY COMPUTER to get the result***/////
+//**Because there was no response when it processed to part 4 
+on pd2.imslab.org server.(I waited the PIEttY for about 10 hrs,
+ but there was still no result of part 4..0_0**//
+
+
+1.
+size=1000
+sort(): 0 seconds
+v1/v2 are different.
+insertion_sort(): 0.01 seconds
+v1/v2 are the same.
+
+2.
+size=10000
+sort(): 0.003 seconds
+v1/v2 are different.
+insertion_sort(): 0.939 seconds
+v1/v2 are the same.
+
+3.
+size=100000
+sort(): 0.027 seconds
+v1/v2 are different.
+insertion_sort(): 91.924 seconds
+v1/v2 are the same.
+
+4.
+size=1000000
+sort(): 0.291 seconds
+v1/v2 are different.
+insertion_sort(): 9147.83 seconds
+v1/v2 are the same.
+
+
+(The row above is the last row of the result.)
+/////////////////////////////////////////
+/*I just calculate 2., 3. and 4. because the times 
+in 1. is too small to calculate.*/ 
+
+time complexity(O):
+sort():n*log(n)
+insertion_sort():n^2
+
+2.
+size=10^4
+O(sort()):4*(10^4)
+O(insertion_sort()):10^8
+complexity ratio:2500
+time:
+ used by sort():0.003s
+ used by insertion_sort():0.939s
+elapsed time ratio:313
+
+3.
+size=10^5
+O(sort()):5*(10^5)
+O(insertion_sort()):10^10
+complexity ratio:20000
+time:
+ used by sort():0.027s
+ used by insertion_sort():91.924s
+elapsed time ratio:about 3405
+
+
+4.
+size=10^6
+O(sort()):6*(10^6)
+O(insertion_sort()):10^12
+complexity ratio:about 166667
+time:
+ used by sort():0.291s
+ used by insertion_sort():9147.83s
+elapsed time ratio:about 31436
+
+//**I also found that the time used by insertion_sort() grows about 100 times
+when the size is enlarged 10 times.**//
+
+
+
+
+
+
