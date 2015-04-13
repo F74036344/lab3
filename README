@@ -1,5 +1,5 @@
 <Question A>
-To complie lab3_qA.cpp,you could just use:
+To complie lab3_qA.cpp,just use:
 
 g++ -o lab3_qA lab3_qA.cpp
 
@@ -7,6 +7,8 @@ because no nonstandard header file is included.
 Another way to compile it is to use:
 
 make lab3_qA
+
+
 
 <Question B>
 To compile lab3_qB.cpp, use:
@@ -16,11 +18,16 @@ make lab3_qB
 File relationships are written in Makefile.
 
 The result obtained by executing lab3_qB:
-/////***I executed lab3_qB ON MY COMPUTER to get the result***/////
-//**Because there was no response when it processed to part 4 
-on pd2.imslab.org server.(I waited the PIEttY for about 10 hrs,
- but there was still no result of part 4..0_0**//
-
+/*1.I executed lab3_qB ON MY COMPUTER to get the result***/
+/*2.Because there was no response when it processed to part 4 
+on pd2.imslab.org server.(I waited the pietty for about 10 hrs,
+ but there was still no result of part 4..0_0*/
+/*3.There's another file named lab3_qB_for_windows.cpp. The difference between it and lab3_qB.cpp is the random function using.
+lab3_qB.cpp uses random() and srandom() while lab3_qB_for_windows.cpp usesrand() and srand(). 
+Since there are no functions such as random() and srandom() on Windows system, so 
+I made some changes, using rand() and srand() instead.
+I use "rand()/(RAND_MAX+1.0)*INT_MAX" to assign each integers in the vector
+a random number ranging from 0 to INT_MAX-1.*/
 
 1.
 size=1000
@@ -93,6 +100,7 @@ elapsed time ratio:about 31436
 
 //**I also found that the time used by insertion_sort() grows about 100 times
 when the size is enlarged 10 times.**//
+
 
 
 
